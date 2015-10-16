@@ -1,0 +1,10 @@
+console.error: 
+  [CustomizableUI]
+  Custom widget with id loop-button does not return a valid node
+1445021427665	addons.update-checker	WARN	Update manifest for gnome-shell-integration@tanwald.net did not contain an updates property
+WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15030:21
+WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15030:21

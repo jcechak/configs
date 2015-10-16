@@ -1,0 +1,62 @@
+#!/bin/sh
+
+#pozadí
+nitrogen --restore &
+
+#scrollování trackpointem
+xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation" 1 &
+xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Button" 2 &
+xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Axes" 6 7 4 5 &
+xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Timeout" 200 &
+
+#scrollování dvěma prsty
+synclient HorizTwoFingerScroll=1 &
+synclient HorizEdgeScroll=1 &
+
+#vypínání obrazovky po 30 sekundách
+xset dpms 0 0 30 &
+
+
+# Disable bell
+xset -b &
+
+# keyboard settings
+# Enable zapping (C-A-<Bksp> kills X)
+setxkbmap -option terminate:ctrl_alt_bksp &
+setxkbmap -layout cz &
+
+
+#terminátor terminál
+#terminator &
+
+#změna barvy na noc
+#xflux -l 49.205037 -g 16.60984 &
+hours=`date +%H`
+if [ $hours -lt 6 ] || [ $hours -ge 17 ]
+then
+    xflux -l 49.205037 -g 16.60984 &
+fi
+
+#nastavení při spouštění
+#gnome-terminal -e "sudo ./startup.sh" &
+
+# dropbox
+dropbox start &
+
+# tryer
+#trayer --edge top --align right --widthtype pixel --width 100 --heighttype pixel --height 18 --SetDockType true --tint 0x0e0e0e --transparent true --alpha 0 &
+
+#aplet pro sitě
+nm-applet --sm-disable &
+nmcli radio all off
+#wicd-client -t &
+
+# Use XToolkit in java applications
+export AWT_TOOLKIT=XToolkit
+
+# Set background color
+#xsetroot -solid "#333333"
+
+# Enable core dumps in case something goes wrong
+ulimit -c unlimited
+
