@@ -1,0 +1,1 @@
+/home/jaroslav/bin/git/blackboard.vim/colors/blackboard.vim

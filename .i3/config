@@ -241,7 +241,7 @@ bindcode 107 exec "sleep 0.3 && xset dpms force off"
 bindcode Mod4+107 exec systemctl suspend
 #bindsym Mod4+Print exec "dbus-send --print-reply --system --dest=org.freedesktop.UPower /org/freedesktop/UPower org.freedesktop.UPower.Suspend"
 # Super + Shift + Print
-bindcode Mod4+Shift+107 exec i3lock -i ~/Obrázky/IMG_2958_lock.png -d && systemctl suspend
+bindcode Mod4+Shift+107 exec i3lock -i ~/Obrázky/IMG_2958_lock.png -d && sleep 1 && systemctl suspend
 # Super + l
 bindcode Mod4+46 exec i3lock -i ~/Obrázky/IMG_2958_lock.png -d
 
@@ -266,7 +266,7 @@ assign [class="Icedove"] → 3
 assign [class="Pidgin"] → 4
 assign [class="Pcmanfm"] → 2
 assign [class="Nautilus"] → 2
-assign [class="NetBeans"] → 1
+assign [class=".*NetBeans.*"] → 1
 assign [class="Gimp"] → 5
 assign [class="Inkscape"] → 5
 assign [class="Java"] → 1 
@@ -279,6 +279,8 @@ for_window [title="pympress content"] fullscreen
 #chování i3 u různých aplikací
 for_window [class="Gmrun"] floating enable
 for_window [class="Gnome-calculator"] floating enable
+for_window [window_role="pop-up"] floating enable
+for_window [window_role="task_dialog"] floating enable
 
 # nastavení workspace
 workspace 10 output VGA1
@@ -307,7 +309,7 @@ bar {
         # i3bar jenom na ntb
         #output LVDS1
         # tray jenom na ntb
-        #tray_output LVDS1
+        tray_output LVDS1
         font pango:DejaVu Sans Mono 10
 }
 

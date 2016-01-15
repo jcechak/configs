@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/jaroslav/test'
+let g:netrw_dirhist_2='/home/jaroslav/bin/git/flocs/practice/fixtures'
+let g:netrw_dirhist_3='/home/jaroslav/bin/git/flocs/frontend/src/common/workspace'
+let g:netrw_dirhist_4='/home/jaroslav/bin/git/flocs/frontend/src/app/practice'
+let g:netrw_dirhist_5='/home/jaroslav/bin/git/flocs/frontend/src/common/services'
+let g:netrw_dirhist_6='/home/jaroslav/Dropbox/Skola/FI MUNI/podzim 2015/PA165/hello_pa165'
+let g:netrw_dirhist_7='/home/jaroslav/Dropbox/Skola/FI MUNI/podzim 2015/PV021/slajdy'

@@ -1,0 +1,1 @@
+/home/jaroslav/bin/git/vim-atom-dark/colors/atom-dark.vim

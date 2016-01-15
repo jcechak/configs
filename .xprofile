@@ -14,7 +14,7 @@ synclient HorizTwoFingerScroll=1 &
 synclient HorizEdgeScroll=1 &
 
 #vypínání obrazovky po 30 sekundách
-xset dpms 0 0 30 &
+#xset dpms 0 0 30 &
 
 
 # Disable bell
