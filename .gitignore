@@ -1,4 +1,5 @@
 *
+!.gitignore
 !.bashrc
 !.i3
 !.i3status.conf
@@ -9,3 +10,4 @@
 !.xinitrc
 !.xprofile
 !.xsession
+.i3/logfile
