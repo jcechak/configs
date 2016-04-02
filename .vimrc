@@ -13,7 +13,7 @@ set tabstop=4
 " use spaces, not tabs, for autoindent/tab key
 set expandtab
 " indent level is 4 spaces wide
-set shiftwidth=4
+set shiftwidth=2
 " width of space used by <TAB> and <BS> keys
 set softtabstop=4
 
