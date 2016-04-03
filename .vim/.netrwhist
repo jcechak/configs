@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/home/jaroslav/.config/google-googletalkplugin'
-let g:netrw_dirhist_2='/home/jaroslav/.virtualenvs'
-let g:netrw_dirhist_3='/home/jaroslav/.virtualenvs/MI8Team'
-let g:netrw_dirhist_4='/home/jaroslav/bin/git/flocs/frontend/src/app/practice'
-let g:netrw_dirhist_5='/home/jaroslav/bin/git/flocs/frontend'
-let g:netrw_dirhist_6='/home/jaroslav/prvakoviny'
