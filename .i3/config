@@ -262,6 +262,7 @@ bindcode 233 exec "xbacklight +`~/backlight_up`"
 # vlastní posílání na specifické plochy
 # Iceaweasel na 3
 assign [class="Iceweasel"] → 3
+assign [class="Firefox"] → 3
 assign [class="Icedove"] → 3
 assign [class="Pidgin"] → 4
 assign [class="Pcmanfm"] → 2

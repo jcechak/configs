@@ -106,7 +106,11 @@ set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 " ==========================================================
 
 " Python Checkers
-let g:syntastic_python_checkers = ['pylint']
+let g:syntastic_python_checkers = ['flake8']
+let g:syntastic_python_python_exec = '/usr/bin/python3'
+
+let g:syntastic_check_on_open = 1
+
 
 " write errors to loc list
 "let g:syntastic_always_populate_loc_list = 1
@@ -125,7 +129,8 @@ map <leader>p :lprev<CR>
 " F403 = 'from foo import *' used
 " E265 = block comment should start with '# '
 " E501 = line too long
-"let g:syntastic_python_pylint_args = '--disable="F403,E265,E501"'
+" E402 = imports at top of the file
+" let g:syntastic_python_pylint_args = '--disable="E402,E265,E501"'
 
 "" messages filtering
 "let g:syntastic_rst_rst2pseudoxml_quiet_messages = {"regex": "Unknown directive type"}

@@ -17,16 +17,16 @@ fi
 #------------------------------------------------------------
 if [ -d "$TPDEV" ]; then
     echo "Configuring Trackpoint"
-    echo -n 200     > $TPDEV/sensitivity     # Integer  128   Sensitivity
-    echo -n 150     > $TPDEV/speed           # Integer  97   Cursor speed
+    echo -n 190     > $TPDEV/sensitivity     # Integer  128   Sensitivity
+    echo -n 255     > $TPDEV/speed           # Integer  97   Cursor speed
     echo -n 6       > $TPDEV/inertia         # Integer  6   Negative intertia
 else
     echo "Couldn't find trackpoint device $TPDEV"
 fi
 
 #scrollování trackpointem
-/usr/bin/xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation" 1 &
-/usr/bin/xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Button" 2 &
-/usr/bin/xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Axes" 6 7 4 5 &
-/usr/bin/xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Timeout" 200 &
+#/usr/bin/xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation" 1 &
+#/usr/bin/xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Button" 2 &
+#/usr/bin/xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Axes" 6 7 4 5 &
+#/usr/bin/xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Timeout" 200 &
 
